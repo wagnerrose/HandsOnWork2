@@ -11,8 +11,8 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg frameRodape navbar-dark">
+      <div class="container-fluid" >
         <a class="navbar-brand" href="#">WR Turismo</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -48,63 +48,138 @@
     </nav>
     <%= yield %>
 
-    <div class="container" style='color: blue;'>
-      <footer class="py-5">
-        <div class="row">
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
+    <div class="container-fluid">
+      <footer class="text-center text-lg-start text-white" style="background-color: #2D9CDB">
+        <section
+          class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+          >
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Siga-nos nas redes</span>
           </div>
+          <!-- Left -->
 
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
+          <!-- Right -->
+          <div>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-github"></i>
+            </a>
           </div>
-
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
-          </div>
-
-          <div class="col-md-5 offset-md-1 mb-3">
-            <form>
-              <h5>Subscribe to our newsletter</h5>
-              <p>Monthly digest of what's new and exciting from us.</p>
-              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">Email address</label>
-                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                <button class="btn btn-primary" type="button">Subscribe</button>
-              </div>
-            </form>
-          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Media Socialv media -->
+        
+        <!-- Section: Links  -->
+  <section class="">
+    <div class="container-fluid text-center text-md-start">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Onde ir
+          </h6>
+          <p>
+            <%= link_to "Lisboa", lisboa_path, class:"text-reset" %>
+          </p>
+          <p>
+            <%= link_to "Porto", porto_path, class:"text-reset" %>
+          </p>
+           <p>
+            <%= link_to "Coimbra", coimbra_path, class:"text-reset" %>
+          </p>
+           <p>
+            <%= link_to "Aveiro", aveiro_path, class:"text-reset" %>
+          </p>
+           <p>
+            <%= link_to "Guimarães", guimaraes_path, class:"text-reset" %>
+          </p>
+           <p>
+            <%= link_to "Braga", braga_path, class:"text-reset" %>
+          </p>
         </div>
+        <!-- Grid column -->
 
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-          <p>© 2022 Company, Inc. All rights reserved.</p>
-          <ul class="list-unstyled d-flex">
-            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-          </ul>
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <%= link_to "WR Turismo", inicio_index_path, class:"fas fa-gem me-3 text-reset" %> 
+          </h6>
+          <p>
+            <%= link_to "Sobre nós", inicio_index_path, class:"text-reset"  %> 
+          </p>
+          <p>
+            <%= link_to "Trabalho conosco", inicio_index_path, class:"text-reset"  %> 
+          </p>
+
         </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Fale conosco
+          </h6>
+          <p>
+            Atendimento: 0800 123-4567
+          </p>
+          <p>
+            Segunda a sexta-feira das 08:00 às 22:00
+          </p>
+          <p>
+            Sábados das 090:00 às 13:00
+          </p>
+          <p>
+            Rua do Patrocínio, 2000 - Florianópolis - SC
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Baixo nosso app
+          </h6>
+          <p>
+            <i class="fas fa-home me-3"></i>
+            Android
+          </p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            IOS
+          </p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: #2D9CDB;color: #FFFF">
+    © 2022 Copyright: WR Turismo
+  </div>
+  <!-- Copyright -->
       </footer>
     </div>
 

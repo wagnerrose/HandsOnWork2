@@ -1,3 +1,15 @@
 // Import Bootstrap v5  
 @import "~bootstrap/scss/bootstrap";
 
+.frameRodape {
+  left: 0px;
+  bottom: 1px;
+  background: #2D9CDB;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  align-items: center;
+  color: #FFFFFF;
+}

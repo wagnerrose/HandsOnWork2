@@ -1,13 +1,11 @@
 Rails.application.routes.draw do
-  get 'aveiro/index'
+  get 'aveiro', controller: 'aveiro', action: 'index'
+  get 'obidos', controller: 'obidos', action: 'index'
   get 'inicio/index'
-  get 'obidos/index'
-  get 'averio/index'
-  get 'coimbra/index'
-  get 'guimaraes/index'
-  get 'braga/index'
+  get 'coimbra', controller: 'coimbra', action: 'index'
+  get 'guimaraes', controller: 'guimaraes', action: 'index'
+  get 'braga', controller: 'braga', action: 'index'
   get 'porto', controller: 'porto', action: 'index'
   get 'lisboa', controller: 'lisboa', action: 'index'
-  get "welcome/index"
   root to: "inicio#index"
 end
