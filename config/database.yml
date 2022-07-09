@@ -1,24 +1,20 @@
 default: &default
-  adapter: postgresql
-  encoding: unicode
-  host: <%= ENV["DB_HOST"] || 'localhost' %>
-  username: <%= ENV["DB_USERNAME"] %>
-  password: <%= ENV["DB_PASSWORD"] %>
-
-  # For details on connection pooling, see Rails configuration guide
-  # https://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  adapter: sqlite3
 
 development:
   <<: *default
-  database: viaje_development
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000
+
 test:
   <<: *default
-  database: viaje_test
+  database: db/test.sqlite3
+  pool: 5
+  timeout: 5000
+
 production:
   <<: *default
-  database: viaje_production
-  host: <%= ENV["DB_HOST"] || 'localhost' %>
-  username: <%= ENV["DB_USERNAME"] %>
-  password: <%= ENV["DB_PASSWORD"] %>
-
+  database: db/production.sqlite3
+  pool: 5
+  timeout: 5000

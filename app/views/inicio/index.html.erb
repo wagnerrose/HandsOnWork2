@@ -3,7 +3,9 @@
     <div class="col-sm"> </div>
     <div class="col-sm-6">
       <div class="mx-auto">
-        <h1>Lisboa </h1>
+        <h1>
+          <%= link_to "Lisboa", lisboa_path, style:"text-decoration: none;" %>
+        </h1>
       </div>
       <div>
         <p>Pellentesque in arcu sed erat egestas facilisis vitae vel tortor. Suspendisse a cursus sapien. In luctus turpis eu eros lacinia sollicitudin. Nulla erat tellus, accumsan at nulla ut, sollicitudin pulvinar risus. Integer pretium convallis urna, quis placerat ligula imperdiet vel. Morbi efficitur lacus sit amet sodales accumsan. Nullam pulvinar risus eu leo placerat ultricies. Nulla bibendum rhoncus arcu, sit amet sagittis mi ornare id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque ex ipsum, euismod eu mauris nec, volutpat hendrerit leo.</p>
@@ -11,18 +13,20 @@
     </div> <!- div col ->
     <div class="col-sm"> </div>
     <div class="col-sm-4">
-      <%= image_tag('Lisboa/Torre de Belem.jpg', style:"width:370px; height: 300px;") %>
+      <%= link_to image_tag('Lisboa/Torre de Belem.jpg', style:"width:370px; height: 300px;"), lisboa_path %>
     </div>
   </div> <!- row ->
   
   <div class="row mt-3 mb-3">
     <div class="col-sm-1"> </div>
     <div class="col-sm-3">
-      <%= image_tag('Porto/20220318_132120.jpg', style:"width:250px; height: 400px;") %>
+      <%= link_to image_tag('Porto/20220318_132120.jpg', style:"width:250px; height: 400px;"), porto_path %>
     </div>
     <div class="col-sm-8">
       <div>
-        <h1>Porto</h1>   
+        <h1>
+          <%= link_to "Porto", porto_path, style:"text-decoration: none;" %>
+        </h1>
       </div>
       <div>
         <p>Pellentesque in arcu sed erat egestas facilisis vitae vel tortor. Suspendisse a cursus sapien. In luctus turpis eu eros lacinia sollicitudin. Nulla erat tellus, accumsan at nulla ut, sollicitudin pulvinar risus. Integer pretium convallis urna, quis placerat ligula imperdiet vel. Morbi efficitur lacus sit amet sodales accumsan. Nullam pulvinar risus eu leo placerat ultricies. Nulla bibendum rhoncus arcu, sit amet sagittis mi ornare id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque ex ipsum, euismod eu mauris nec, volutpat hendrerit leo.  </p>
@@ -34,7 +38,9 @@
     <div class="col-sm"> </div>
     <div class="col-sm-6">
       <div>
-        <h1>Coimbra</h1>
+        <h1>
+          <%= link_to "Coimbra", coimbra_path, style:"text-decoration: none;" %>
+        </h1>
       </div>
       <div>
         <p>Pellentesque in arcu sed erat egestas facilisis vitae vel tortor. Suspendisse a cursus sapien. In luctus turpis eu eros lacinia sollicitudin. Nulla erat tellus, accumsan at nulla ut, sollicitudin pulvinar risus. Integer pretium convallis urna, quis placerat ligula imperdiet vel. Morbi efficitur lacus sit amet sodales accumsan. Nullam pulvinar risus eu leo placerat ultricies. Nulla bibendum rhoncus arcu, sit amet sagittis mi ornare id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque ex ipsum, euismod eu mauris nec, volutpat hendrerit leo.</p>
@@ -42,10 +48,52 @@
     </div> <!- div col ->
     <div class="col-sm"> </div>
     <div class="col-sm-4">
-      <%= image_tag('Coimbra/Coimbra.jpg', style:"width:370px; height: 300px;") %>
+      <%= link_to image_tag('Coimbra/Coimbra.jpg', style:"width:370px; height: 300px;"), coimbra_path %>
     </div>
   </div> <!- row ->
+  <div class="row">
+    <div class="col">
+      <h1 class="text-center">Outros destinos</h1>
+    </div>
+  </div> <!- row ->
+  
+  <div class="row">
+    <div class="col">
+      <%= link_to image_tag('Aveiro/CostaNova.jpg', style:"width:263px; height: 188px;"), aveiro_path %>
+    </div> 
+    <div class="col">
+      <%= link_to image_tag('Guimaraes/Passeio1.jpg', style:"width:263px; height: 188px;"), guimaraes_path %>
+    </div> 
+    <div class="col">
+      <%= link_to image_tag('Braga/20220320_144158.jpg', style:"width:263px; height: 188px;"), braga_path %>
+    </div> 
+    <div class="col">
+      <%= link_to image_tag('Obidos/Ocastelo.jpg', style:"width:263px; height: 188px;"), obidos_path %>
+    </div> 
+  </div> <!- row ->
  
+  <div class="row">
+    <div class="col">
+      <p>
+        <%=link_to "Aveiro", aveiro_path, style:"text-decoration: none;" %>
+      </p>
+    </div> 
+    <div class="col">
+      <p>
+        <%=link_to "Guimarães", guimaraes_path, style:"text-decoration: none;" %>
+      </p>
+    </div> 
+    <div class="col">
+      <p>
+        <%=link_to "Braga", braga_path, style:"text-decoration: none;" %>
+      </p>
+    </div> 
+    <div class="col">
+      <p>
+        <%=link_to "Óbidos", obidos_path, style:"text-decoration: none;" %>
+      </p>
+    </div> 
+  </div> <!- row ->
 
-
+  </div>
 </div><!- container-fluid ->
