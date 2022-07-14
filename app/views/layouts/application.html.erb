@@ -6,6 +6,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <%# <script src="https://kit.fontawesome.com/888db18a7f.js" crossorigin="anonymous"></script> %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -13,7 +14,7 @@
   <body>
     <nav class="navbar navbar-expand-lg frameRodape navbar-dark">
       <div class="container-fluid" >
-        <a class="navbar-brand" href="#">WR Turismo</a>
+        <%= link_to "WR Turismo", inicio_path, class: "navbar-brand" %>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,66 +22,60 @@
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-               Viagens
+               Cidades Portuguesas
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Lisboa</a></li>
-                <li><a class="dropdown-item" href="#">Porto</a></li>
-                <li><a class="dropdown-item" href="#">Coimbra</a></li>
-                <li><a class="dropdown-item" href="#">Aveiro</a></li>
-                <li><a class="dropdown-item" href="#">Guimarães</a></li> 
-                <li><a class="dropdown-item" href="#">Braga</a></li>
-                <li><a class="dropdown-item" href="#">Óbidos</a></li>
+                <li><%= link_to "Lisboa", lisboa_path, class: 'dropdown-item' %></li>
+                <li><%= link_to "Porto", porto_path, class: 'dropdown-item' %></li>
+                <li><%= link_to "Coimbra", coimbra_path, class: 'dropdown-item' %></li>
+                <li><%= link_to "Aveiro", aveiro_path, class: 'dropdown-item' %></li>
+                <li><%= link_to "Guimarães", guimaraes_path, class: 'dropdown-item' %></li>
+                <li><%= link_to "Braga", braga_path, class: 'dropdown-item' %></li>
+                <li><%= link_to "Óbidos", obidos_path, class: 'dropdown-item' %></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Hoteis</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Carro</a>
+              <a class="nav-link" href="#">Alugel de Carro</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Carro</a>
+              <a class="nav-link" href="#">Dicas de viagem</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     
-    <%= image_tag('Lisboa/20220321_182830.jpg',class:"imagemCabecalho mx-auto") %>
+   <div class="row faixa">
+    <div >
+      <h2 Viaje comigo</h2>
+      <p>Portugal</p>
+    </div>
+   </div> <!- row imagem cabecalho ->
 
     <%= yield %>
 
     <div class="container-fluid mt-3">
-      <footer class="text-center text-lg-start text-white" style="background-color: #2D9CDB">
-        <section
-          class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-          >
+      <footer class="text-sm-start " >
+        <section class="d-flex justify-content-center justify-content-sm-between frameRedesSociais " >
           <!-- Left -->
-          <div class="me-5 d-none d-lg-block">
-            <span>Siga-nos nas redes</span>
+          <div class="d-none d-sm-block">
+            <p><span>Siga-nos nas redes</span></p>
           </div>
           <!-- Left -->
 
           <!-- Right -->
           <div>
             <a href="" class="me-4 text-reset">
-              <i class="fab fa-facebook-f"></i>
+              <i class="fa-brands fa-facebook"></i>
             </a>
             <a href="" class="me-4 text-reset">
-              <i class="fab fa-twitter"></i>
+              <i class="fa-brands fa-twitter"></i>
             </a>
             <a href="" class="me-4 text-reset">
-              <i class="fab fa-google"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-github"></i>
+              <i class="fa-brands fa-instagram"></i>
             </a>
           </div>
           <!-- Right -->
@@ -88,104 +83,104 @@
         <!-- Section: Media Socialv media -->
         
         <!-- Section: Links  -->
-  <section class="">
-    <div class="container-fluid text-center text-md-start">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Onde ir
-          </h6>
-          <p>
-            <%= link_to "Lisboa", lisboa_path, class:"text-reset" %>
-          </p>
-          <p>
-            <%= link_to "Porto", porto_path, class:"text-reset" %>
-          </p>
-           <p>
-            <%= link_to "Coimbra", coimbra_path, class:"text-reset" %>
-          </p>
-           <p>
-            <%= link_to "Aveiro", aveiro_path, class:"text-reset" %>
-          </p>
-           <p>
-            <%= link_to "Guimarães", guimaraes_path, class:"text-reset" %>
-          </p>
-           <p>
-            <%= link_to "Braga", braga_path, class:"text-reset" %>
-          </p>
-           <p>
-            <%= link_to "Óbidos", obidos_path, class:"text-reset" %>
-          </p>
-         </div>
-        <!-- Grid column -->
+        <section>
+          <div class="container-fluid text-center text-md-start frameRodape">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Onde ir
+                </h6>
+                <p>
+                <%= link_to "Lisboa", lisboa_path, class:"text-reset" %>
+                </p>
+                <p>
+                <%= link_to "Porto", porto_path, class:"text-reset" %>
+                </p>
+                <p>
+                <%= link_to "Coimbra", coimbra_path, class:"text-reset" %>
+                </p>
+                <p>
+                <%= link_to "Aveiro", aveiro_path, class:"text-reset" %>
+                </p>
+                <p>
+                <%= link_to "Guimarães", guimaraes_path, class:"text-reset" %>
+                </p>
+                <p>
+                <%= link_to "Braga", braga_path, class:"text-reset" %>
+                </p>
+                <p>
+                <%= link_to "Óbidos", obidos_path, class:"text-reset" %>
+                </p>
+              </div>
+              <!-- Grid column -->
 
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            <%= link_to "WR Turismo", inicio_index_path, class:"fas fa-gem me-3 text-reset" %> 
-          </h6>
-          <p>
-            <%= link_to "Sobre nós", inicio_index_path, class:"text-reset"  %> 
-          </p>
-          <p>
-            <%= link_to "Trabalho conosco", inicio_index_path, class:"text-reset"  %> 
-          </p>
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <%= link_to "WR Turismo", inicio_path, class:"fas fa-gem me-3 text-reset" %> 
+                </h6>
+                <p>
+                <%= link_to "Sobre nós", inicio_path, class:"text-reset"  %> 
+                </p>
+                <p>
+                <%= link_to "Trabalho conosco", inicio_path, class:"text-reset"  %> 
+                </p>
 
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Fale conosco
+                </h6>
+                <p>
+                Atendimento: 0800 123-4567
+                </p>
+                <p>
+                Segunda a sexta-feira das 08:00 às 22:00
+                </p>
+                <p>
+                Sábados das 090:00 às 13:00
+                </p>
+                <p>
+                Rua do Patrocínio, 2000 - Florianópolis - SC
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Baixo nosso app
+                </h6>
+                <p>
+                <i class="fas fa-home me-3"></i>
+                Android
+                </p>
+                <p>
+                <i class="fas fa-envelope me-3"></i>
+                IOS
+                </p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: #2D9CDB;color: #FFFF">
+          © 2022 Copyright: WR Turismo
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Fale conosco
-          </h6>
-          <p>
-            Atendimento: 0800 123-4567
-          </p>
-          <p>
-            Segunda a sexta-feira das 08:00 às 22:00
-          </p>
-          <p>
-            Sábados das 090:00 às 13:00
-          </p>
-          <p>
-            Rua do Patrocínio, 2000 - Florianópolis - SC
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Baixo nosso app
-          </h6>
-          <p>
-            <i class="fas fa-home me-3"></i>
-            Android
-          </p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-            IOS
-          </p>
-        </div>
-        <!-- Grid column -->
-      </div>
-      <!-- Grid row -->
-    </div>
-  </section>
-  <!-- Section: Links  -->
-
-  <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: #2D9CDB;color: #FFFF">
-    © 2022 Copyright: WR Turismo
-  </div>
-  <!-- Copyright -->
+        <!-- Copyright -->
       </footer>
     </div>
 

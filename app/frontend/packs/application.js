@@ -11,6 +11,9 @@ import "channels"
 // Importa bootstrap
 import '../js/bootstrap_js_files.js' 
 
+// Importa font-awesome
+import "@fortawesome/fontawesome-free/js/all";
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
