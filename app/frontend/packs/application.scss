@@ -1,44 +1,6 @@
 // Import Bootstrap v5  
 @import "~bootstrap/scss/bootstrap";
 
-// @import "bootstrap-icons/font/bootstrap-icons";
-
-.frameRodape {
-    height: 156px;
-    background-color: #2D9CDB;
-}
-
-.frameRodape p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    align-items: center;
-    color: #FFFFFF;
-}
-
-.frameRedesSociais{
-    margin: 0 auto;
-    height: 50px;
-    background-color: #2D9CDB;
-}
-
-.frameRedesSociais p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    color: #FFFFFF;
-    font-weight: bold;
-    line-height: 17px;
-}
-
-.frameRedesSociais {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    align-items: center;
-    color: #FFFFFF;
-}
-
 .faixa{
     // width: 1336px;
     width: auto;
@@ -63,6 +25,26 @@
 //    background-size: cover;
 // }
 
+.frameRedesSociais{
+    height: 80px;
+    background-color: #2D9CDB;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-weight: bold;
+    line-height: 17px;
+}
+
+.frameRodape {
+    height: 180px;
+    background-color: #2D9CDB;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    // align-items: center;
+}
+
 .texto-descritivo {
   text-align: justify;
 }
@@ -85,12 +67,6 @@
     text-align: center;
 }
 
-.imagem-cidade {
-    width: 1171px;
-    height: 623px;
-    border-radius: 30px;
-}
-
 .titulo-onde-visitar {
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -111,6 +87,34 @@
     color: #03087D;
 }
 
+.titulo-outros-lugares {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 39px;
+    text-align: center;
+    color: #03087D;
+}
+
+.titulo-lugar-pequeno {
+    text-align: center;
+    text-decoration: none;
+}
+
+.imagem-cidade {
+    width: 1171px;
+    height: 623px;
+    border-radius: 30px;
+}
+
+.imagem-lugar-vertical{
+    width: 470px;
+    height: 714px;
+    left: 97px;
+    bottom: 245px;
+    border-radius: 30px;
+}
 .imagem-lugar-grande {
     width: 1171px;
     height: 462px;
@@ -122,34 +126,12 @@
     height: 350px;
     margin: 5px 10px;
     border-radius: 30px;
-
-}
-
-.titulo-outros-lugares {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 39px;
-    text-align: center;
-    color: #03087D;
 }
 
 .imagem-lugar-pequeno {
-    width: 270px;
-    height: 270px;
-    left: 97px;
-    bottom: 245px;
-    border-radius: 30px;
-}
-.titulo-lugar-pequeno {
-    text-align: center;
-}
-
-.imagem-lugar-vertical{
-    width: 470px;
-    height: 714px;
-    left: 97px;
-    bottom: 245px;
+    width: 263px;
+    height: 188px;
+    // left: 97px;
+    // bottom: 245px;
     border-radius: 30px;
 }

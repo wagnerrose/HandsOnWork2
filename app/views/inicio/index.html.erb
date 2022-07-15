@@ -67,41 +67,30 @@
   <!- ====  Fotos outro destinos ==== ->
   <div class="row">
     <div class="col">
-      <%= link_to image_tag('Aveiro/CostaNova.jpg', style:"width:263px; height: 188px;"), aveiro_path %>
+      <center>
+        <%= link_to image_tag('Aveiro/CostaNova.jpg', class:'imagem-lugar-pequeno'), aveiro_path %>
+        <p><%=link_to "Aveiro", aveiro_path, class:'titulo-lugar-pequeno mx-auto' %></p>
+      </center>
     </div> 
     <div class="col">
-      <%= link_to image_tag('Guimaraes/Passeio1.jpg', style:"width:263px; height: 188px;"), guimaraes_path %>
+      <center>
+        <%= link_to image_tag('Guimaraes/Passeio1.jpg', class:'imagem-lugar-pequeno'), guimaraes_path %>
+        <p><%=link_to "Guimarães", guimaraes_path, style:"text-decoration: none;" %></p>
+      </center>
     </div> 
     <div class="col">
-      <%= link_to image_tag('Braga/20220320_144158.jpg', style:"width:263px; height: 188px;"), braga_path %>
+      <center>
+        <%= link_to image_tag('Braga/20220320_144158.jpg', class:'imagem-lugar-pequeno'), braga_path %>
+        <p><%=link_to "Braga", braga_path, style:"text-decoration: none;" %></p>
+      </center>
     </div> 
     <div class="col">
-      <%= link_to image_tag('Obidos/OCastelo.jpg', style:"width:263px; height: 188px;"), obidos_path %>
+      <center>
+        <%= link_to image_tag('Obidos/OCastelo.jpg', class:'imagem-lugar-pequeno'), obidos_path %>
+        <p><%=link_to "Óbidos", obidos_path, style:"text-decoration: none;" %></p>
+      </center>
     </div> 
   </div> <!- row ->
  
-  <div class="row">
-    <div class="col">
-      <p>
-        <%=link_to "Aveiro", aveiro_path, style:"text-decoration: none;" %>
-      </p>
-    </div> 
-    <div class="col">
-      <p>
-        <%=link_to "Guimarães", guimaraes_path, style:"text-decoration: none;" %>
-      </p>
-    </div> 
-    <div class="col">
-      <p>
-        <%=link_to "Braga", braga_path, style:"text-decoration: none;" %>
-      </p>
-    </div> 
-    <div class="col">
-      <p>
-        <%=link_to "Óbidos", obidos_path, style:"text-decoration: none;" %>
-      </p>
-    </div> 
-  </div> <!- row ->
-
   </div>
 </div><!- container-fluid ->
