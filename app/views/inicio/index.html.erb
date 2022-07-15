@@ -9,21 +9,24 @@
         </h1>
       </div>
       <div class="texto-descritivo">
-        <p>Pellentesque in arcu sed erat egestas facilisis vitae vel tortor. Suspendisse a cursus sapien. In luctus turpis eu eros lacinia sollicitudin. Nulla erat tellus, accumsan at nulla ut, sollicitudin pulvinar risus. Integer pretium convallis urna, quis placerat ligula imperdiet vel. Morbi efficitur lacus sit amet sodales accumsan. Nullam pulvinar risus eu leo placerat ultricies. Nulla bibendum rhoncus arcu, sit amet sagittis mi ornare id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque ex ipsum, euismod eu mauris nec, volutpat hendrerit leo.</p>
+        <p>Lisboa é uma cidade iluminada. A presença quase constante do sol e do rio Tejo transforma a capital portuguesa em um espelho de mil cores – destacando a arquitetura e a beleza única da cidade.</p>
+        <p>Há tantas coisas para ver e fazer em Lisboa que os visitantes têm acesso a uma grande variedade de experiências diferentes</p>
+        <p>Ao caminhar por Lisboa – cuja história se estende por milhares de anos – encontramos ruas repletas de monumentos históricos, e bairros característicos onde a cidade se desenvolveu pela primeira vez e ainda pode ser vivenciada em seu nível mais genuíno.</p>
+        <p class="fonte-texto"> Fonte: https://visiteomundo.com/atividades/europa/portugal/lisboa/ </p>
       </div>
     </div> <!- div col ->
     <div class="col-sm"> </div>
     <div class="col-sm-4">
-      <%= link_to image_tag('Lisboa/Torre de Belem.jpg', style:"width:370px; height: 300px;"), lisboa_path %>
+      <%= link_to image_tag('Lisboa/Torre de Belem.jpg', class: 'img-fluid imagem-lugar-medio'), lisboa_path %>
     </div>
   </div> <!- row ->
 
   <!- ====  Porto ==== ->
 
   <div class="row mt-3 mb-3">
-    <div class="col-sm-1"> </div>
-    <div class="col-sm-3">
-      <%= link_to image_tag('Porto/20220318_132120.jpg', style:"width:250px; height: 400px;"), porto_path %>
+    <div class="col-1"> </div>
+    <div class="col-3">
+      <%= link_to image_tag('Porto/20220318_132120.jpg', class: 'img-fluid', style:"width:250px; height: 400px; border-radius: 30px;"), porto_path %>
     </div>
     <div class="col-sm-6">
       <div>
@@ -32,19 +35,20 @@
         </h1>
       </div>
       <div class="texto-descritivo">
-        <p>Pellentesque in arcu sed erat egestas facilisis vitae vel tortor. Suspendisse a cursus sapien. In luctus turpis eu eros lacinia sollicitudin. Nulla erat tellus, accumsan at nulla ut, sollicitudin pulvinar risus. Integer pretium convallis urna, quis placerat ligula imperdiet vel. Morbi efficitur lacus sit amet sodales accumsan. Nullam pulvinar risus eu leo placerat ultricies. Nulla bibendum rhoncus arcu, sit amet sagittis mi ornare id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque ex ipsum, euismod eu mauris nec, volutpat hendrerit leo.  </p>
+        <p> A segunda maior cidade de Portugal encanta os visitantes com a sua história, vinhos premiados e arquitetura grandiosa. A cidade do Porto, declarada como Patrimônio Mundial da Humanidade pela UNESCO, é uma das cidades mais antigas e bem preservadas da Europa. Situada às margens escarpadas do Rio Douro, a cidade combina o charme do Velho Mundo com a paixão por bons vinhos. </p>
+        <p class:'fonte-texto'>Fonte: https://www.expedia.com.br/Portod</p>
       </div>
     </div> <!- col ->
-    <div class="col-sm-2"> </div>
+    <div class="col-2"> </div>
   </div> <!- row ->
 
   <!- ====  Coimbra ==== ->
   <div class= "row">
     <div class="col-sm"> </div>
-    <div class="col-sm-6">
+    <div class="col-6">
       <div>
         <h1>
-          <%= link_to "Coimbra", coimbra_path, style:"text-decoration: none;" %>
+          <%= link_to "Coimbra", coimbra_path, class: 'img-fluid', style:"text-decoration: none;" %>
         </h1>
       </div>
       <div class="texto-descritivo">
@@ -52,8 +56,8 @@
       </div>
     </div> <!- div col ->
     <div class="col-sm"> </div>
-    <div class="col-sm-4">
-      <%= link_to image_tag('Coimbra/Coimbra.jpg', style:"width:370px; height: 300px;"), coimbra_path %>
+    <div class="col-4">
+      <%= link_to image_tag('Coimbra/Coimbra.jpg', style:"width:370px; height: 300px; border-radius: 30px;"), coimbra_path %>
     </div>
   </div> <!- row ->
 

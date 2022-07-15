@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg frameRodape navbar-dark">
+    <nav class="navbar navbar-expand navbar-dark " style="background-color: #2D9CDB;">
       <div class="container-fluid" >
         <%= link_to "WR Turismo", inicio_path, class: "navbar-brand" %>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,27 +34,25 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Hoteis</a>
+              <%= link_to "Hoteis","#", class:'nav-link' %>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Alugel de Carro</a>
+              <%= link_to "Aluguel de Carro","#", class:'nav-link' %>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Dicas de viagem</a>
+              <%= link_to "Dicas de Viagens","#", class:'nav-link' %>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    
-   <div class="row faixa">
-    <div >
-      <h2 Viaje comigo</h2>
-      <p>Portugal</p>
+  
+    <!-- imagem Viaje Comigo -->
+    <div>
+      <%= image_tag "Lisboa/faixa.svg", class: "img-fluid" %>
     </div>
-   </div> <!- row imagem cabecalho ->
 
-    <%= yield %>
+   <%= yield %>
 
     <!-- Redes Sociais -->
     <section>
