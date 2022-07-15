@@ -1,13 +1,7 @@
 // Import Bootstrap v5  
 @import "~bootstrap/scss/bootstrap";
 
-// using font-awesome
-$fa-font-path: '@fortawesome/fontawesome-free/webfonts';
-@import '@fortawesome/fontawesome-free/scss/fontawesome';
-@import '@fortawesome/fontawesome-free/scss/solid';
-@import '@fortawesome/fontawesome-free/scss/regular';
-@import '@fortawesome/fontawesome-free/scss/brands';
-@import '@fortawesome/fontawesome-free/scss/v4-shims';
+// @import "bootstrap-icons/font/bootstrap-icons";
 
 .frameRodape {
     height: 156px;
@@ -22,6 +16,7 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 }
 
 .frameRedesSociais{
+    margin: 0 auto;
     height: 50px;
     background-color: #2D9CDB;
 }

@@ -9,7 +9,8 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
 // Importa bootstrap
-import '../js/bootstrap_js_files.js' 
+import '../js/bootstrap_js_files.js'
+// import 'bootstrap-icons/font/bootstrap-icons.css'
 
 // Importa font-awesome
 import "@fortawesome/fontawesome-free/js/all";

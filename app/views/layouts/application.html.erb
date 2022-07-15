@@ -6,7 +6,6 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%# <script src="https://kit.fontawesome.com/888db18a7f.js" crossorigin="anonymous"></script> %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -57,122 +56,88 @@
 
     <%= yield %>
 
-    <div class="container-fluid mt-3">
-      <footer class="text-sm-start " >
-        <section class="d-flex justify-content-center justify-content-sm-between frameRedesSociais " >
-          <!-- Left -->
-          <div class="d-none d-sm-block">
-            <p><span>Siga-nos nas redes</span></p>
-          </div>
-          <!-- Left -->
+    <!-- Redes Sociais -->
+    <section>
+      <footer class="container-fluid text-center text-white" style="background-color: #2D9CDB;" >
+        <div>
+          <p class="fw-bold"><span>Siga-nos nas redes</span></p>
+        </div>
 
-          <!-- Right -->
-          <div>
-            <a href="" class="me-4 text-reset">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </div>
-          <!-- Right -->
+        <div>
+          <a href="#!"
+             class="btn btn-link btn-floating btn-sm text-white"
+             role="button"
+             data-mdb-ripple-color="dark" >
+             <i class="fab fa-facebook-f fa-2x"></i >
+          </a>
+
+          <a href="#"
+             class="btn btn-link btn-floating btn-sm text-white"
+             role="button"
+             data-mdb-ripple-color="dark" >
+             <i class="fa-brands fa-twitter fa-2x"></i>
+          </a>
+
+          <a href="#!"
+             class="btn btn-link btn-floating btn-sm text-white"
+             role="button"
+             data-mdb-ripple-color="dark" >
+             <i class="fa-brands fa-instagram fa-2x"></i>
+          </a>
         </section>
-        <!-- Section: Media Socialv media -->
+        <!-- Section: Redes Sociais -->
         
         <!-- Section: Links  -->
-        <section>
-          <div class="container-fluid text-center text-md-start frameRodape">
-            <!-- Grid row -->
-            <div class="row mt-3">
-              <!-- Grid column -->
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Onde ir
-                </h6>
-                <p>
-                <%= link_to "Lisboa", lisboa_path, class:"text-reset" %>
-                </p>
-                <p>
-                <%= link_to "Porto", porto_path, class:"text-reset" %>
-                </p>
-                <p>
-                <%= link_to "Coimbra", coimbra_path, class:"text-reset" %>
-                </p>
-                <p>
-                <%= link_to "Aveiro", aveiro_path, class:"text-reset" %>
-                </p>
-                <p>
-                <%= link_to "Guimarães", guimaraes_path, class:"text-reset" %>
-                </p>
-                <p>
-                <%= link_to "Braga", braga_path, class:"text-reset" %>
-                </p>
-                <p>
-                <%= link_to "Óbidos", obidos_path, class:"text-reset" %>
-                </p>
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <!-- Content -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                  <%= link_to "WR Turismo", inicio_path, class:"fas fa-gem me-3 text-reset" %> 
-                </h6>
-                <p>
-                <%= link_to "Sobre nós", inicio_path, class:"text-reset"  %> 
-                </p>
-                <p>
-                <%= link_to "Trabalho conosco", inicio_path, class:"text-reset"  %> 
-                </p>
-
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Fale conosco
-                </h6>
-                <p>
-                Atendimento: 0800 123-4567
-                </p>
-                <p>
-                Segunda a sexta-feira das 08:00 às 22:00
-                </p>
-                <p>
-                Sábados das 090:00 às 13:00
-                </p>
-                <p>
-                Rua do Patrocínio, 2000 - Florianópolis - SC
-                </p>
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Baixo nosso app
-                </h6>
-                <p>
-                <i class="fas fa-home me-3"></i>
-                Android
-                </p>
-                <p>
-                <i class="fas fa-envelope me-3"></i>
-                IOS
-                </p>
-              </div>
-              <!-- Grid column -->
+        <section class="container-fluid">
+          <!-- Grid row -->
+          <div class="row  justify-content-center text-white mt-1" style="background-color: #2D9CDB;">
+            <!-- Grid column -->
+            <div class="col-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="fw-bold mt-2 mb-2"> Onde ir </h6>
+              <p> <%= link_to "Lisboa", lisboa_path, class:"text-reset" %> </p>
+              <p> <%= link_to "Porto", porto_path, class:"text-reset" %> </p>
+              <p> <%= link_to "Coimbra", coimbra_path, class:"text-reset" %> </p>
+              <p> <%= link_to "Aveiro", aveiro_path, class:"text-reset" %> </p>
+              <p> <%= link_to "Guimarães", guimaraes_path, class:"text-reset" %> </p>
+              <p> <%= link_to "Braga", braga_path, class:"text-reset" %> </p>
+              <p> <%= link_to "Óbidos", obidos_path, class:"text-reset" %> </p>
             </div>
-            <!-- Grid row -->
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="fw-bold mt-2 mb-4">
+                <%= link_to "WR Turismo", inicio_path, class:"me-3 text-reset" %> 
+              </h6>
+              <p> <%= link_to "Sobre nós", "", class:"text-reset"  %> </p>
+              <p> <%= link_to "Trabalho conosco", inicio_path, class:"text-reset"  %> </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-3 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="fw-bold mt-2 mb-2"> Fale conosco </h6>
+              <p> Atendimento: 0800 123-4567 </p>
+              <p> Segunda a sexta-feira das 08:00 às 22:00 </p>
+              <p> Sábados das 090:00 às 13:00 </p>
+              <p> Rua do Patrocínio, 2000 - Florianópolis - SC </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-2 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="fw-bold mt-2 mb-2"> Baixo nosso app </h6>
+              <p> <i class="fas fa-home me-3"></i> Android </p>
+              <p> <i class="fas fa-envelope me-3"></i> IOS </p>
+            </div>
+            <!-- Grid column -->
           </div>
+          <!-- Grid row -->
         </section>
         <!-- Section: Links  -->
 
@@ -183,7 +148,5 @@
         <!-- Copyright -->
       </footer>
     </div>
-
-
   </body>
 </html>
