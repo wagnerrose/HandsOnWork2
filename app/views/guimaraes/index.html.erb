@@ -1,8 +1,7 @@
 <div class= "container-fluid">
   <!- ====  Guimaraes ==== ->
-  <div class= "row mt-3">
-    <div class="col-sm-1"> </div>
-    <div class="col-sm-1 titulo-cidade">
+  <div class= "row justify-content-around mt-3">
+    <div class="col-10 titulo-cidade">
       <p>Guimarães</p>
     </div>
   </div> <!- row titulo ->
@@ -12,25 +11,23 @@
     </div>
   </div> <!- row subtitulo ->
 
-  <div class="row">
-    <div class="col-sm-1"> </div>
-    <div class="col-sm-8">
-      <%=  image_tag('Guimaraes/Castelo.jpg', class:"imagem-cidade" )%>
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <%=  image_tag('Guimaraes/Castelo.jpg', class:"imagem-cidade img-fluid" )%>
     </div>
   </div><!- row ->
 
-  <div class="row p-3">
-    <div class="col-sm-2"> </div>
-    <div class="col-sm-8">
+  <div class="row justify-content-center p-3">
+    <div class="col-5">
       <div class="texto-descritivo">
-        <p>Pellentesque in arcu sed erat egestas facilisis vitae vel tortor. Suspendisse a cursus sapien. In luctus turpis eu eros lacinia sollicitudin. Nulla erat tellus, accumsan at nulla ut, sollicitudin pulvinar risus. Integer pretium convallis urna, quis placerat ligula imperdiet vel. Morbi efficitur lacus sit amet sodales accumsan. Nullam pulvinar risus eu leo placerat ultricies. Nulla bibendum rhoncus arcu, sit amet sagittis mi ornare id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque ex ipsum, euismod eu mauris nec, volutpat hendrerit leo.</p>
+        <p>A cidade é reconhecida como “o Berço de Portugal”, sendo que já existia antes mesmo da fundação do país.  Durante o século X, grande parte da península Ibérica estava tomada pelos mouros. Com isso, os cristãos refugiarem-se no local onde hoje fica a cidade de Guimarães. Foi Afonso Henriques, primeiro Rei de Portugal, morador da cidade, que iniciou as batalhas pela independência. Foi por volta de 1128 que aconteceram os principais acontecimentos políticos e militares, que resultaram na independência de Portugal.</p>
+        <p class="fonte-texto"><b>Fonte:</b> https://www.viagensecaminhos.com/2020/11/guimaraes-portugal.html </p>
       </div>
     </div> 
   </div><!- row ->
 
   <!- Onde Visitar ->
-  <div class="row">
-    <div class="col-sm-1"> </div>
+  <div class="row justify-content-around">
     <div class="col-sm-8 titulo-onde-visitar">
       <p>O que visitar em Guimarães</p>
     </div>
@@ -38,74 +35,85 @@
 
   <!- Lugar a visitar O Castelo ->
   <div class="row mt-4">
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="titulo-lugar">
         <p>O Castelo</p>
       </div>
-      <div class="col-sm-6 offset-sm-3 texto-descritivo">
-        <p>Pellentesque in arcu sed erat egestas facilisis vitae vel tortor. Suspendisse a cursus sapien. In luctus turpis eu eros lacinia sollicitudin. Nulla erat tellus, accumsan at nulla ut, sollicitudin pulvinar risus. Integer pretium convallis urna, quis placerat ligula imperdiet vel. Morbi efficitur lacus sit amet sodales accumsan. Nullam pulvinar risus eu leo placerat ultricies. Nulla bibendum rhoncus arcu, sit amet sagittis mi ornare id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque ex ipsum, euismod eu mauris nec, volutpat hendrerit leo.</p>
+      <div class="col-6 texto-descritivo">
+        <p>Construído no século X, o Castelo de Guimarães é um dos marcos da fundação de Portugal, ligado às lutas da independência do país. Já tem mais de 1000 anos, com sua construção datada do ano de 958.</p>
+        <p>Passou por reformas durante os séculos, mas continua em pé com toda a sua imponência. O castelo possui muralhas reforçadas por 4 torres, onde os visitantes podem fazer a caminhada.</p>
+        <p>Na torre central, há uma pequena exposição que conta um pouco da história de Portugal e do Rei Dom Afonso Henriques, primeiro rei do país, que nasceu no castelo de Guimarães.O castelo é a atração imperdível da lista do que fazer em Guimarães.Abre das 10h às 18h e o ingresso custa 2 Euros.</p>
+        <p class="fonte-texto"><b>Fonte:</b>https://www.viagensecaminhos.com/2020/11/guimaraes-portugal.html</p>
       </div>
     </div>
 
-  <div class="row">
-    <div class="col-sm-4 offset-sm-1">
-      <%=  image_tag('Guimaraes/Castelo2.jpg', class:"imagem-lugar-medio" )%>
+  <div class="row justify-content-center">
+    <div class="col-5">
+      <%=  image_tag('Guimaraes/Castelo2.jpg', class:"imagem-lugar-medio img-fluid" )%>
     </div>
-    <div class="col-sm-4 offset-sm-1">
-      <%=  image_tag('Guimaraes/Castelo3.jpg', class:"imagem-lugar-medio" )%>
+    <div class="col-5">
+      <%=  image_tag('Guimaraes/Castelo3.jpg', class:"imagem-lugar-medio img-fluid" )%>
     </div>
  </div><!- row lugar ->
 
   <!- Lugar a visitar Paço dos Duques de Bragança  ->
-  <div class="row mt-4">
-    <div class="col-sm-4 offset-sm-1">
+  <div class="row justify-content-end mt-4">
+    <div class="col-5 my-auto">
       <div class="titulo-lugar">
         <p>Paço dos Duques de Bragança</p>
       </div>
       <div class="texto-descritivo">
-        <p>Pellentesque in arcu sed erat egestas facilisis vitae vel tortor. Suspendisse a cursus sapien. In luctus turpis eu eros lacinia sollicitudin. Nulla erat tellus, accumsan at nulla ut, sollicitudin pulvinar risus. Integer pretium convallis urna, quis placerat ligula imperdiet vel. Morbi efficitur lacus sit amet sodales accumsan. Nullam pulvinar risus eu leo placerat ultricies. Nulla bibendum rhoncus arcu, sit amet sagittis mi ornare id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque ex ipsum, euismod eu mauris nec, volutpat hendrerit leo.</p>
+        <p> Construído no século XV por Dom Afonso, serviu como moradia por um breve período, ficando depois abandonado até o século XX. Após passar por uma grande reforma, finalizada em 1959, foi transformado em museu.</p>
+        <p>Alguns dos destaques do museu são os tapetes persas, tapeçarias flamengas, além de pinturas e os belos salões. O teto da sala de banquetes reproduz o casco virado de uma caravela, em homenagem às proezas marítimas dos portugueses.</p>
+        <p>O Paço dos Duques abre das 10h às 18h. O ingresso custa 5 Euros. Já, o bilhete combinado para o Castelo e o Paço dos Duques custa 6 Euros.</p>
+        <p class="fonte-texto"><b>Fonte:</b>https://www.viagensecaminhos.com/2020/11/guimaraes-portugal.html</p>
       </div>
       <div>
-        <%=  image_tag('Guimaraes/PacoDuquesDeBraganca.jpg', class:"imagem-lugar-medio" )%>
+        <%=  image_tag('Guimaraes/PacoDuquesDeBraganca.jpg', class:"imagem-lugar-medio img-fluid" )%>
       </div>
     </div>
-    <div class="col-sm-4 offset-sm-1">
-      <%=  image_tag('Guimaraes/PacoDuqueDeBraganca2.jpg', class:"imagem-lugar-vertical" )%>
+    <div class="col-5">
+      <center>
+        <%=  image_tag('Guimaraes/PacoDuqueDeBraganca2.jpg', class:"imagem-lugar-vertical img-fluid" )%>
+      </center>
     </div>
  </div><!- row lugar ->
 
 
   <!- Lugar a visitar Largo da Oliveira ->
   <div class="row mt-3">
-    <div class="col-sm-5 offset-sm-1">
-      <%=  image_tag('Guimaraes/LargoDaOliveira.jpg', class:"imagem-lugar-medio" )%>
+    <div class="col-5">
+      <%=  image_tag('Guimaraes/LargoDaOliveira.jpg', class:"imagem-lugar-medio img-fluid" )%>
     </div>
-    <div class="col-sm-4">
+    <div class="col-4">
       <div class="titulo-lugar">
         <p>Largo da Oliveira</p>
       </div>
       <div class="texto-descritivo">
-        <p>Pellentesque in arcu sed erat egestas facilisis vitae vel tortor. Suspendisse a cursus sapien. In luctus turpis eu eros lacinia sollicitudin. Nulla erat tellus, accumsan at nulla ut, sollicitudin pulvinar risus. Integer pretium convallis urna, quis placerat ligula imperdiet vel. Morbi efficitur lacus sit amet sodales accumsan. Nullam pulvinar risus eu leo placerat ultricies. Nulla bibendum rhoncus arcu, sit amet sagittis mi ornare id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque ex ipsum, euismod eu mauris nec, volutpat hendrerit leo.</p>
+        <p> O Largo da Oliveira é uma praça rodeada de belos prédios antigos, cafés e restaurantes. Foi neste local que se iniciou a cidade de Guimarães.</p>
+        <p>No canto da praça fica também a igreja Nossa Senhora da Oliveira, construída no século XII, toda em pedra. É um dos mais representativos exemplares de arquitetura gótica no Norte de Portugal.</p>
+        <p class="fonte-texto"><b>Fonte:</b>https://www.viagensecaminhos.com/2020/11/guimaraes-portugal.html</p>
       </div>
   </div><!- row lugar ->
 
   <!- Lugar a visitar Passeio pelo centro ->
-  <div class="row mt-4">
-    <div class="row">
+    <div class="row justify-content-center mt-4">
       <div class="titulo-lugar">
         <p>Passeio pelo centro</p>
       </div>
-      <div class="col-sm-6 offset-sm-3 texto-descritivo">
-        <p>Pellentesque in arcu sed erat egestas facilisis vitae vel tortor. Suspendisse a cursus sapien. In luctus turpis eu eros lacinia sollicitudin. Nulla erat tellus, accumsan at nulla ut, sollicitudin pulvinar risus. Integer pretium convallis urna, quis placerat ligula imperdiet vel. Morbi efficitur lacus sit amet sodales accumsan. Nullam pulvinar risus eu leo placerat ultricies. Nulla bibendum rhoncus arcu, sit amet sagittis mi ornare id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque ex ipsum, euismod eu mauris nec, volutpat hendrerit leo.</p>
+      <div class="col-6 texto-descritivo">
+        <p> O largo de Toural é considerado o coração da cidade de Guimarães. O local é ponto de encontro de moradores e turistas, repleto de cafés e restaurantes. Construído no século XVII o largo passou por várias transformações em sua história. Hoje possui apenas um Chafariz renascentista de três taças e é rodeado de belos edifícios, formando um belo cenário.
+        </p>
+        <p class="fonte-texto"><b>Fonte:</b>https://www.viagensecaminhos.com/2020/11/guimaraes-portugal.html</p>
       </div>
     </div>
 
-  <div class="row">
-    <div class="col-sm-4 offset-sm-1">
-      <%=  image_tag('Guimaraes/Passeio1.jpg', class:"imagem-lugar-medio" )%>
+  <div class="row justify-content-center">
+    <div class="col-5">
+      <%=  image_tag('Guimaraes/Passeio1.jpg', class:"imagem-lugar-medio img-fluid" )%>
     </div>
-    <div class="col-sm-4 offset-sm-1">
-      <%=  image_tag('Guimaraes/Passeio4.jpg', class:"imagem-lugar-medio" )%>
+    <div class="col-5">
+      <%=  image_tag('Guimaraes/Passeio4.jpg', class:"imagem-lugar-medio img-fluid" )%>
     </div>
  </div><!- row lugar ->
 </div><!- container-fluid ->

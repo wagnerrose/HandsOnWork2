@@ -55,8 +55,8 @@
    <%= yield %>
 
     <!-- Redes Sociais -->
-    <section>
-      <footer class="container-fluid text-center frameRedesSociais"  >
+    <footer>
+      <div class="row container-fluid text-center frameRedesSociais">
         <div>
           <p class="fw-bold"><span>Siga-nos nas redes</span></p>
         </div>
@@ -82,62 +82,59 @@
              data-mdb-ripple-color="dark" >
              <i class="fa-brands fa-instagram fa-2x"></i>
           </a>
-        </section>
-        <!-- Section: Redes Sociais -->
+        </div>
+      </div>
+        <!--  Redes Sociais -->
         
-        <!-- Section: Links  -->
-        <section class="container-fluid">
+      <!-- row: Links  -->
+      <div class="row  justify-content-center frameRodape mt-1" >
+        <div class="col-2">
+          <!-- Links --> 
+          <h6 class="fw-bold mt-2"  > Onde ir </h6>
+          <ul style="list-style-type: none;">
+            <li> <%= link_to "Lisboa", lisboa_path, class:"text-reset lh-1" %> </li>
+            <li> <%= link_to "Porto", porto_path, class:"text-reset lh-1 ml-8" %> </li>
+            <li> <%= link_to "Coimbra", coimbra_path, class:"text-reset" %> </li>
+            <li> <%= link_to "Aveiro", aveiro_path, class:"text-reset" %> </li>
+            <li> <%= link_to "Guimarães", guimaraes_path, class:"text-reset" %> </li>
+            <li> <%= link_to "Braga", braga_path, class:"text-reset" %> </li>
+            <li> <%= link_to "Óbidos", obidos_path, class:"text-reset" %></li>
+          </ul>
+        </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-2">
+        <!-- Content -->
+        <h6 class="fw-bold mt-2 mb-4">
+          <%= link_to "WR Turismo", inicio_path, class:"me-3 text-reset" %> 
+        </h6>
+        <p> <%= link_to "Sobre nós", "", class:"text-reset"  %> </p>
+        <p> <%= link_to "Trabalho conosco", inicio_path, class:"text-reset"  %> </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-3">
+        <!-- Links -->
+        <h6 class="fw-bold mt-2 mb-2"> Fale conosco </h6>
+        <p> <i class="fa-solid fa-phone me-3"></i>Atendimento: 0800 123-4567 </p>
+        <p> <i class="fa-solid fa-clock me-3"></i>Segunda a sexta-feira das 08:00 às 22:00 </p>
+        <p> <i class="fa-solid fa-clock me-3"></i>Sábados das 090:00 às 13:00 </p>
+        <p> <i class="fa-solid fa-address-card me-3"></i>Rua do Patrocínio, 2000 - Florianópolis - SC </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-2">
+        <!-- Links -->
+        <h6 class="fw-bold mt-2 mb-2"> Baixe nosso app </h6>
+        <p> <i class="fa-brands fa-android fa-2x me-3"></i>Android</p>
+        <p> <i class="fa-brands fa-apple fa-2x me-3"></i>IOS</p>
+      </div>
+    </div>
           <!-- Grid row -->
-          <div class="row  justify-content-center frameRodape mt-1" >
-            <!-- Grid column -->
-            <%# <div class="col "> %>
-              <!-- Links -->
-              <%# <h6 class="fw-bold mt-2 mb-2 "> Onde ir </h6> %>
-              <%# <p> <%= link_to "Lisboa", lisboa_path, class:"text-reset lh-1", style:"margin-left: 10px;"  %1> </p> %>
-              <%# <p> <%= link_to "Porto", porto_path, class:"text-reset lh-1 ml-8" %1> </p> %>
-              <%# <p> <%= link_to "Coimbra", coimbra_path, class:"text-reset" %1> </p> %>
-              <%# <p> <%= link_to "Aveiro", aveiro_path, class:"text-reset" %1> </p> %>
-              <%# <p> <%= link_to "Guimarães", guimaraes_path, class:"text-reset" %1> </p> %>
-              <%# <p> <%= link_to "Braga", braga_path, class:"text-reset" %1> </p> %>
-              <%# <p> <%= link_to "Óbidos", obidos_path, class:"text-reset" %1> </p> %>
-            <%# </div> %>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col">
-              <!-- Content -->
-              <h6 class="fw-bold mt-2 mb-4">
-                <%= link_to "WR Turismo", inicio_path, class:"me-3 text-reset" %> 
-              </h6>
-              <p> <%= link_to "Sobre nós", "", class:"text-reset"  %> </p>
-              <p> <%= link_to "Trabalho conosco", inicio_path, class:"text-reset"  %> </p>
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col">
-              <!-- Links -->
-              <h6 class="fw-bold mt-2 mb-2"> Fale conosco </h6>
-              <p> Atendimento: 0800 123-4567 </p>
-              <p> Segunda a sexta-feira das 08:00 às 22:00 </p>
-              <p> Sábados das 090:00 às 13:00 </p>
-              <p> Rua do Patrocínio, 2000 - Florianópolis - SC </p>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col">
-              <!-- Links -->
-              <h6 class="fw-bold mt-2 mb-2"> Baixo nosso app </h6>
-              <p> <i class="fas fa-home me-3"></i> Android </p>
-              <p> <i class="fas fa-envelope me-3"></i> IOS </p>
-            </div>
-            <!-- Grid column -->
-          </div>
-          <!-- Grid row -->
-        </section>
-        <!-- Section: Links  -->
+   <!-- Links  -->
 
         <!-- Copyright -->
         <div class="text-center mt-1" style="background-color: #2D9CDB;color: #FFFF">
