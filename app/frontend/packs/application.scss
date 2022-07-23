@@ -4,13 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 
 :root {
-    --font-xl: clamp(4rem, 10vw+0.1rem,8rem);
-    --font-lg: clamp(3rem, 5vw+0.1rem,6rem)3rem;
-    --font-md: clamp(1rem, 1vw+0.1rem,2rem)1rem;
+    --font-xl: clamp(2rem, 4vw, 8rem);
+    --font-lg: clamp(1rem, 3vw ,6rem);
+    --font-md: clamp(1rem, 1.4vw, 2rem);
 }
 
 .cabecalho 
 {
+    font-family: 'Gentium Plus', serif;
+    font-size: var(--font-md);
     background-color: #2D9CDB;
     color: #FFFFFF
 }
@@ -21,27 +23,22 @@
 }
 
 .frameRedesSociais{
-    height: 80px;
+    font-family: 'Gentium Plus', serif;
+    font-size: var(--font-md);
     background-color: #2D9CDB;
     color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: 700;
     font-weight: bold;
-    line-height: 17px;
 }
 
 .frameRodape {
-    height: 200px;
+    font-family: 'Gentium Plus', serif;
+    font-size: var(--font-md);
     background-color: #2D9CDB;
     color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
 }
 
 .fonte-texto {
     font-family: 'Gentium Plus', serif;
-    font-size: var(--font-md);
     font-style: normal;
     color: #03087D;
 }
@@ -54,7 +51,6 @@
 
 .titulo-cidade {
     font-family: 'Inter', sans-serif;
-    font-weight: 500px;
     font-size: var(--font-xl);
     font-style: normal;
     color: #03087D;
@@ -63,7 +59,6 @@
 
 .subtitulo-cidade {
     font-family: 'Inter', sans-serif;
-    font-weight: 300px;
     font-size: var(--font-lg);
     font-style: normal;
     color: #03087D;
@@ -71,8 +66,7 @@
 }
 
 .titulo-onde-visitar {
-    font-family: 'Inter', sans-serif;
-    font-weight: 300px;
+    font-family: 'Gentium Plus', serif;
     font-size: var(--font-lg);
     font-style: normal;
     text-align: justify;
@@ -80,21 +74,17 @@
 }
 
 .titulo-lugar {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gentium Plus', serif;
+    font-size: var(--font-lg);
     font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 39px;
     text-align: center;
     color: #03087D;
 }
 
 .titulo-outros-lugares {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 39px;
     text-align: center;
     color: #03087D;
 }
@@ -107,36 +97,36 @@
 .imagem-cidade {
     margin: 0 auto;
     display: block;
-    width: 900px;
-    height: 480px;
+    // width: 900px;
+    // height: 480px;
     border-radius: 30px;
 }
 
 .imagem-lugar-vertical{
     margin: 0 auto;
     display: block;
-    width: 470px;
-    height: 714px;
+    // width: 470px;
+    // height: 714px;
     border-radius: 30px;
 }
 .imagem-lugar-grande {
     margin: 0 auto;
     display: block;
-    width: 1171px;
-    height: 462px;
+    // width: 1171px;
+    // height: 462px;
     border-radius: 30px;
 }
 
 .imagem-lugar-medio{
-    width: 570px;
-    height: 350px;
+    // width: 570px;
+    // height: 350px;
     margin: 5px 10px;
     border-radius: 30px;
 }
 
 .imagem-lugar-pequeno {
-    width: 263px;
-    height: 188px;
+    // width: 263px;
+    // height: 188px;
     border-radius: 30px;
     transition: all 0.5s;
     cursor: pointer;

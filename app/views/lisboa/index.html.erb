@@ -1,8 +1,8 @@
 <div class= "container-fluid">
   <!- ====  Lisboa ==== ->
   <div class= "row justify-content-around mt-4">
-    <div class="col-10 titulo-cidade">
-      <p>Lisboa</p>
+    <div class="col-10 ">
+      <p class="titulo-cidade">Lisboa</p>
     </div>
   </div> <!- row titulo ->
   <div class="row">
@@ -11,12 +11,14 @@
     </div>
   </div> <!- row subtitulo ->
 
-    <div>
+  <div class="row justify-content-center">
+    <div class="col-8">
       <%=  image_tag('Lisboa/Praca do Comercio.jpg', class:"imagem-cidade img-fluid " )%>
     </div>
+  </div>
 
   <div class="row justify-content-center p-3">
-    <div class="col-6">
+    <div class="col-6 my-auto">
       <div class="texto-descritivo">
         <p>Lisboa é uma cidade e um município português, capital de Portugal e da Área Metropolitana de Lisboa. Tem uma área urbana de 100,05 km2, 545.923 habitantes[2] em 2021 e uma densidade populacional de 5.456 habitantes por km2, sendo a maior cidade do país. Lisboa é o centro político de Portugal, sede do Governo e da residência do chefe de Estado.</p>
         <p>Lisboa é considerada como cidade global devido à sua importância em aspectos financeiros, comerciais, mediáticos, artísticos, educacionais e turísticos. É um dos principais centros econômicos do continente europeu, graças a um progresso financeiro crescente favorecido pelo maior porto de contentores da costa atlântica da Europa[5] e mais recentemente pelo Aeroporto Humberto Delgado, que recebe mais de 20 milhões de passageiros anualmente (2015).</p>
@@ -26,9 +28,8 @@
   </div><!- row ->
 
   <!- Onde Visitar ->
-  <div class="row">
-    <div class="col-sm-1"> </div>
-    <div class="col-sm-8 titulo-onde-visitar">
+  <div class="row justify-content-center">
+    <div class="col-8 titulo-onde-visitar">
       <p>O que visitar em Lisboa</p>
     </div>
   </div> <!- row titulo onde visitar->
@@ -41,7 +42,7 @@
   </div> <!- row titulo lugar ->
 
   <div class="row justify-content-center">
-    <div class="col-8 ">
+    <div class="col-8">
       <%=  image_tag('Lisboa/Mosteiro de Sao Bento.jpg', class:"imagem-lugar-grande img-fluid" )%>
     </div>
   </div><!- row ->
@@ -79,7 +80,7 @@
 
   <!- Lugar a visitar Torre de Belém ->
   <div class="row justify-content-end mt-3">
-    <div class="col-6 ">
+    <div class="col-6 my-auto">
       <center><%=  image_tag('Lisboa/Torre de Belem.jpg', class:"imagem-lugar-medio img-fluid" )%></center>
     </div>
     <div class="col-4">
@@ -103,7 +104,7 @@
         <p class="fonte-texto"><b>Fonte:</b>https://dicasdelisboa.com.br/pontos-turisticos/castelo-de-sao-jorge-em-lisboa-portugal/</p>      
       </div>
     </div>
-    <div class="col-6 ">
+    <div class="col-6 my-auto">
       <%=  image_tag('Lisboa/Castelo de São Jorge.jpg', class:"imagem-lugar-medio img-fluid" )%>
     </div>
  </div><!- row lugar ->
@@ -123,7 +124,7 @@
      </div>
      <div class="col-3">
        <center>
-         <div> <%= image_tag("Lisboa/IgrejaDeSantoAntonio.jpg", class:"imagem-lugar-pequeno img-fluid") %> </div>
+         <div> <%= image_tag("Lisboa/IgrejaDeSantoAntonio2.jpg", class:"imagem-lugar-pequeno img-fluid") %> </div>
          <div><p>Igreja de Santo Antônio</p></div>
        </center>
      </div>

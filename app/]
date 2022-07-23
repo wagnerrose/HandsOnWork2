@@ -1,0 +1,148 @@
+<div class= "container-fluid">
+  <!- ====  Lisboa ==== ->
+  <div class= "row justify-content-around mt-4">
+    <div class="col-10 titulo-cidade">
+      <h1>Lisboa</h1>
+    </div>
+  </div> <!- row titulo ->
+  <div class="row">
+    <div class="subtitulo-cidade">
+      <p>Conheça a capital de Portugal</p>
+    </div>
+  </div> <!- row subtitulo ->
+
+    <div>
+      <%=  image_tag('Lisboa/Praca do Comercio.jpg', class:"imagem-cidade img-fluid " )%>
+    </div>
+
+  <div class="row justify-content-center p-3">
+    <div class="col-6">
+      <div class="texto-descritivo">
+        <p>Lisboa é uma cidade e um município português, capital de Portugal e da Área Metropolitana de Lisboa. Tem uma área urbana de 100,05 km2, 545.923 habitantes[2] em 2021 e uma densidade populacional de 5.456 habitantes por km2, sendo a maior cidade do país. Lisboa é o centro político de Portugal, sede do Governo e da residência do chefe de Estado.</p>
+        <p>Lisboa é considerada como cidade global devido à sua importância em aspectos financeiros, comerciais, mediáticos, artísticos, educacionais e turísticos. É um dos principais centros econômicos do continente europeu, graças a um progresso financeiro crescente favorecido pelo maior porto de contentores da costa atlântica da Europa[5] e mais recentemente pelo Aeroporto Humberto Delgado, que recebe mais de 20 milhões de passageiros anualmente (2015).</p>
+        <p class="fonte-texto"><b>Fonte:</b>https://pt.wikipedia.org/wiki/Lisboa</p>
+      </div>
+    </div> 
+  </div><!- row ->
+
+  <!- Onde Visitar ->
+  <div class="row">
+    <div class="col-sm-1"> </div>
+    <div class="col-sm-8 titulo-onde-visitar">
+      <p>O que visitar em Lisboa</p>
+    </div>
+  </div> <!- row titulo onde visitar->
+
+  <!- Lugar a visitar Mosteiro dos Jerónimos>
+  <div class="row">
+    <div class="titulo-lugar">
+      <p>Mosteiro dos Jerónimos</p>
+    </div>
+  </div> <!- row titulo lugar ->
+
+  <div class="row justify-content-center">
+    <div class="col-8 ">
+      <%=  image_tag('Lisboa/Mosteiro de Sao Bento.jpg', class:"imagem-lugar-grande img-fluid" )%>
+    </div>
+  </div><!- row ->
+
+  <div class="row justify-content-center p-3">
+    <div class="col-6">
+      <div class="texto-descritivo">
+        <p>O Mosteiro dos Jerónimos é um dos mosteiros mais bonitos da Europa. Idealizado em 1496 pelo rei Dom Manuel I, sua construção levou mais de 90 anos para ser concluída e, depois da inauguração, o Mosteiro dos Jerónimos se tornou um dos maiores de Portugal. Tamanha a sua importância, 1907, ele recebeu o título de Patrimônio Humanidade pela Unesco. O Mosteiro dos Jerónimos fica situado próximo às margens do Rio Tejo e é um dos pontos turísticos mais importantes e visitados de Portugal. Como está localizado em uma das regiões mais turísticas de Lisboa, é um ponto turístico indispensável para visitar na cidade.</p>
+        <p class="fonte-texto"><b>Fonte:</b>https://dicasdelisboa.com.br/pontos-turisticos/mosteiro-dos-jeronimos-em-lisboa-portugal/</p>
+      </div>
+    </div> 
+  </div><!- row ->
+
+  <!- Lugar a visitar Monumento aos descobrimentos->
+  <div class="row">
+    <div class="titulo-lugar">
+      <p>Padrão dos descobrimentos</p>
+    </div>
+  </div> <!- row titulo lugar ->
+
+  <div class="row justify-content-center">
+    <div class="col-sm-8">
+      <%=  image_tag('Lisboa/Monumento do Descobrimento.jpg', class:"imagem-lugar-grande img-fluid" )%>
+    </div>
+  </div><!- row ->
+
+  <div class="row justify-content-center p-3">
+    <div class="col-6">
+      <div class="texto-descritivo">
+        <p>Localizado às margens do Rio Tejo, o Padrão dos Descobrimentos em Lisboa é um símbolo do passado glorioso que Portugal teve na época das grandes navegações, sendo uma grande homenagem aos navegadores portugueses, e que retrata alguns dos incentivadores, poetas, navegantes e outros personagens que fizeram parte dessa importante história. O monumento foi erguido em 1960, no bairro de Belém, em Lisboa, e pensado pelo arquiteto português Cottinelli Telmo, cuja intenção era imortalizar Infante Dom Henrique e seus colaboradores e seguidores no plano de desbravar o além-mar.</p>
+        <p class="fonte-texto"><b>Fonte:</b>https://dicasdelisboa.com.br/pontos-turisticos/padrao-dos-descobrimentos-em-lisboa-portugal/</p>      
+      </div>
+    </div> 
+  </div><!- row ->
+
+  <!- Lugar a visitar Torre de Belém ->
+  <div class="row justify-content-end mt-3">
+    <div class="col-6 ">
+      <center><%=  image_tag('Lisboa/Torre de Belem.jpg', class:"imagem-lugar-medio img-fluid" )%></center>
+    </div>
+    <div class="col-4">
+      <div class="titulo-lugar">
+        <p>Torre de Belém</p>
+      </div>
+      <div class="texto-descritivo">
+        <p>A Torre de Belém é um monumento super tradicional e histórico de Lisboa, assim como o Castelo de São Jorge em Lisboa. Com 30 metros de altura, ela é uma fortificação que se destaca pela sua arquitetura, já que é rodeada por decorações e brasões das armas de Portugal, incluindo inscrições de cruzes da Ordem de Cristo nas janelas. Ela é chamada oficialmente de Torre de São Vicente, e fica afastada do centro turístico de Lisboa, estando localizada na freguesia de Belém. Mais abaixo, nós explicamos como chegar até ela.</p>
+        <p class="fonte-texto"><b>Fonte:</b>https://dicasdelisboa.com.br/pontos-turisticos/torre-de-belem-em-lisboa-portugal/</p>      
+      </div>
+  </div><!- row lugar ->
+
+  <!- Lugar a visitar Castelo de São Jorge->
+  <div class="row justify-content-around mt-4">
+    <div class="col-4">
+      <div class="titulo-lugar">
+        <p> Castelo de São Jorge</p>
+      </div>
+      <div class="texto-descritivo">
+        <p>O Castelo de São Jorge em Lisboa é enorme e fica em um ponto bem alto de Lisboa, e por isso é possível vê-lo de muitas áreas da cidade. É um ponto turístico realmente imperdível, que tem uma longa história. Ele foi construído para proteger a cidade dos romanos, sob a invocação de São Jorge, um mártir ao qual muitos guerreiros dedicavam sua devoção. Quando Lisboa se tornou capital do reino, em 1255, o Castelo se elevou a Paço Real e mais tarde Paço da Alcáçova, além de palácio de bispos e outras funções, como forte militar.</p>
+        <p class="fonte-texto"><b>Fonte:</b>https://dicasdelisboa.com.br/pontos-turisticos/castelo-de-sao-jorge-em-lisboa-portugal/</p>      
+      </div>
+    </div>
+    <div class="col-6 ">
+      <%=  image_tag('Lisboa/Castelo de São Jorge.jpg', class:"imagem-lugar-medio img-fluid" )%>
+    </div>
+ </div><!- row lugar ->
+
+ <div class="row mt-5">
+   <div class="row">
+     <div class="titulo-outros-lugares">
+       <p>Outros Lugares a visitar</p>
+     </div>
+   </div><!- row titulo outros a visitar>
+   <div class="row"> 
+     <div class="col-3">
+       <center>
+         <div> <%= image_tag("Lisboa/Praca do Comercio.jpg", class:"imagem-lugar-pequeno img-fluid") %></div>
+         <div> <p>Praça do Comércio</p> </div>
+       </center>
+     </div>
+     <div class="col-3">
+       <center>
+         <div> <%= image_tag("Lisboa/IgrejaDeSantoAntonio.jpg", class:"imagem-lugar-pequeno img-fluid") %> </div>
+         <div><p>Igreja de Santo Antônio</p></div>
+       </center>
+     </div>
+     <div class="col-3">
+       <center>
+         <div> <%= image_tag("Lisboa/bairro-alto-rua-principal.jpg", class:"imagem-lugar-pequeno img-fluid") %></div>
+         <div> <p>Chiado e Bairro Alto</p></div>
+       </center>
+     </div>
+     <div class="col-3">
+       <center>
+         <div><%= image_tag("Lisboa/lisboa-parque-eduardo-vii.jpg", class:"imagem-lugar-pequeno img-fluid") %> </div>
+         <div ><p>Parque Henrique VII</p></div>
+       </center>
+     </div>
+  </div><!- row imagens outros a visitar>
+</div>
+
+
+
+</div><!- container-fluid ->
+
